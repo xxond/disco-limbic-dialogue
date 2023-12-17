@@ -96,6 +96,7 @@ async def generate_answer(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
             dialog.append(new_text)
         db.update({'dialog': dialog}, Req.user == username)
     else:
+        answer_start = ''
         dialog = [new_text] if new_text else []
         db.insert({'user': username, 'dialog': dialog, 'prefix': ''})
 
