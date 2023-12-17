@@ -1,2 +1,11 @@
-./data_raw/
-./data_table/
+__pycache__/
+.ipynb_checkpoints/
+lora/
+wandb/
+client/rust_bot/target/debug/
+data/dataset
+data/raw
+data/table
+*.pyc
+tg-secret.txt
+db.json
