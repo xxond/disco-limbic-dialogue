@@ -2,10 +2,11 @@ __pycache__/
 .ipynb_checkpoints/
 lora/
 wandb/
-client/rust_bot/target/debug/
 data/dataset
 data/raw
 data/table
+model/
+docker_model/
 *.pyc
 tg-secret.txt
 db.json
