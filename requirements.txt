@@ -1,0 +1,9 @@
+torch
+transformers
+peft
+tinydb
+python-telegram-bot
+bitsandbytes
+einops
+accelerate
+SciPy
