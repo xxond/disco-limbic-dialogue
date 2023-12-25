@@ -1,15 +1,9 @@
-"""
-Conversation prompt templates.
-"""
-
 import dataclasses
 from enum import auto, Enum
 from typing import List, Any
 
 
 class SeparatorStyle(Enum):
-    """Different separator style."""
-
     ADD_COLON_SINGLE = auto()
     ADD_COLON_TWO = auto()
     NO_COLON_SINGLE = auto()

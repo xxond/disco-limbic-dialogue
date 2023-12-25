@@ -7,12 +7,8 @@ MODEL_TYPES = [
     'minichat',
     'phi'
 ]
-INST = 'You are the parts of the human brain that ' \
-        'conduct a dialogue, you can enter into verbal ' \
-        'altercations with the interlocutor. You need to response emotionally.'
 
 
-# Minichat
 def template(dial, model_type):
     conv = get_default_conv_template(model_type)
     for i in dial:
@@ -62,7 +58,6 @@ class CombineDataset(Dataset):
         labels[example_len: ] = -1
         example_mask = example.ge(0)
         label_mask = labels.ge(0)
-        #example[~example_mask] = 0
         labels[~label_mask] = 0
         labels[~label_mask] = IGNORE_INDEX
         example_mask[example_len: ] = False
