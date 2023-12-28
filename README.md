@@ -42,7 +42,7 @@ docker run --gpus all -ti -v $volume:/root/.cache/ ghcr.io/xxond/disco-llm:v1
 For deploying the Telegram bot client using Docker:
 ```
 volume=$PWD/docker_model
-secret=6848522548:AAGZeV0VadVBznW7kuBsg4taJ90R98X5jrQ
+secret=<your secret key>
 
 docker run --gpus all -ti -v $volume:/root/.cache/ ghcr.io/xxond/disco-llm:v1 $secret
 ```
