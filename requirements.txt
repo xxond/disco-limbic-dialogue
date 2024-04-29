@@ -1,6 +1,7 @@
-torch
-transformers
+torch==2.1.2
+transformers==4.36.2
 peft
+sentencepiece
 tinydb
 python-telegram-bot
 bitsandbytes
